@@ -1,9 +1,8 @@
 'use strict';
 
 angular.module('angularBootstrapDemoApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    $http.get('/api/awesomeThings').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-      $scope.singleModel = 1;
-    });
+  .controller('MainCtrl', function ($scope, Characters) {
+    $scope.singleModel = 1;
+    $scope.characters = {};
+    $scope.characters = Characters.getCharacters.query();
   });
