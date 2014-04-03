@@ -1,8 +1,6 @@
 'use strict';
 
 angular.module('angularBootstrapDemoApp')
-  .controller('MainCtrl', function ($scope, Characters) {
+  .controller('MainCtrl', function ($scope) {
     $scope.singleModel = 1;
-    $scope.characters = {};
-    $scope.characters = Characters.getCharacters.query();
   });

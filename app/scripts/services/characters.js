@@ -6,8 +6,8 @@ charactersServices.factory('Characters', function ($resource) {
   var keys = '?apikey=8bb7d18b23478ba89c7739240cbfacf4&ts=1&hash=e28cc5642354658a649cdd5a07eb3d7d';
   var data = {};
 
-  var data.getCharacters = function (){
-    return $require(api + 'characters' + keys)
+  data.getCharacters = function (){
+    return $resource(api + 'characters' + keys);
   };
 
   return data;

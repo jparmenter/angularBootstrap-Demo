@@ -6,13 +6,23 @@ describe('Service: characters', function () {
   beforeEach(module('angularBootstrapDemoApp'));
 
   // instantiate service
-  var characters;
-  beforeEach(inject(function (_characters_) {
-    characters = _characters_;
+  var Characters,
+    $httpBackend;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function (_$httpBackend_, $controller, $rootScope) {
+    $httpBackend = _$httpBackend_;
+    $httpBackend.expectGET('/api/awesomeThings')
+      .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
+    var scope = $rootScope.$new();
+    Characters = $factory('Characters', {
+      $scope: scope
+    });
   }));
 
-  it('should do something', function () {
-    expect(!!characters).toBe(true);
-  });
-
+  // it('should attach a list of awesomeThings to the scope', function () {
+  //   expect(scope.awesomeThings).toBeUndefined();
+  //   $httpBackend.flush();
+  //   expect(scope.awesomeThings.length).toBe(2);
+  // });
 });
