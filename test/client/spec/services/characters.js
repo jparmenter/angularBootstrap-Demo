@@ -10,14 +10,11 @@ describe('Service: characters', function () {
     $httpBackend;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function (_$httpBackend_, $controller, $rootScope) {
+  beforeEach(inject(function (_$httpBackend_, _Characters_) {
     $httpBackend = _$httpBackend_;
     $httpBackend.expectGET('/api/awesomeThings')
       .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
-    var scope = $rootScope.$new();
-    Characters = $factory('Characters', {
-      $scope: scope
-    });
+    Characters = _Characters_;
   }));
 
   // it('should attach a list of awesomeThings to the scope', function () {
