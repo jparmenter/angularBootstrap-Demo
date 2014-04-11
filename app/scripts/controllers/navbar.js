@@ -1,15 +1,18 @@
 'use strict';
 
-angular.module('angularBootstrapDemoApp')
+angular.module('angularBootstrap2App')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
     },
-    {
-      'title': 'About',
-      'link': '/about'
+    {'title': 'About',
+      'link': '/About'
+    },
+    {'title': 'Form',
+      'link': '/Form'
     }];
+
     $scope.isActive = function(route) {
       return route === $location.path();
     };

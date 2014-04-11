@@ -1,9 +1,8 @@
 'use strict';
 
-angular.module('angularBootstrapDemoApp')
+angular.module('angularBootstrap2App')
   .controller('MainCtrl', function ($scope, $http) {
     $http.get('/api/awesomeThings').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
-      $scope.singleModel = 1;
     });
   });

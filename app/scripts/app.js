@@ -1,17 +1,23 @@
 'use strict';
 
-angular.module('angularBootstrapDemoApp', [
+angular.module('angularBootstrap2App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute',
-  'ui.bootstrap'
+  'ngRoute'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
+      })
+      .when('/About', {
+        templateUrl: 'partials/about',
+        controller: 'AboutCtrl'
+      })
+      .when('/Form', {
+        templateUrl: 'partials/form'
       })
       .otherwise({
         redirectTo: '/'
