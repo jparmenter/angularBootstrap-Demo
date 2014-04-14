@@ -26,10 +26,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div ng-include="'partials/navbar'"></div>
-    </div>
+    <div class="container" ng-include="'partials/navbar'"></div>
     <div class="container" ng-view=""></div>
+    <div class="container" ng-include="'partials/footer'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -64,6 +63,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/navbar.js"></script>
         <script src="scripts/controllers/form.js"></script>
+        <script src="scripts/controllers/footer.js"></script>
         <!-- endbuild -->
 </body>
 </html>
