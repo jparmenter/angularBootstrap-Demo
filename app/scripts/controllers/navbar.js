@@ -11,6 +11,9 @@ angular.module('angularBootstrap2App')
     },
     {'title': 'Form',
       'link': '/Form'
+    },
+    {'title': 'File',
+      'link': '/File'
     }];
 
     $scope.isActive = function(route) {

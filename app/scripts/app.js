@@ -19,6 +19,9 @@ angular.module('angularBootstrap2App', [
       .when('/Form', {
         templateUrl: 'partials/form'
       })
+      .when('/File', {
+        templateUrl: 'partials/file'
+      })
       .otherwise({
         redirectTo: '/'
       });
