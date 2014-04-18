@@ -4,7 +4,8 @@ angular.module('angularBootstrap2App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui.bootstrap'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
@@ -16,11 +17,15 @@ angular.module('angularBootstrap2App', [
         templateUrl: 'partials/about',
         controller: 'AboutCtrl'
       })
-      .when('/Form', {
-        templateUrl: 'partials/form'
+      .when('/Forms/form', {
+        templateUrl: 'partials/forms/form',
+        controller: 'FormCtrl'
       })
-      .when('/File', {
-        templateUrl: 'partials/file'
+      .when('/Forms/File', {
+        templateUrl: 'partials/forms/file'
+      })
+      .when('/Forms/Event', {
+        templateUrl: 'partials/forms/event'
       })
       .otherwise({
         redirectTo: '/'

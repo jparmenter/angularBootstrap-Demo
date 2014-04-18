@@ -1,0 +1,21 @@
+<form>
+  <h4>Add Event</h4>
+  <div class="form-group">
+    <label for="txtName">Name</label>
+    <input type="text" id="txtName" class="form-control" ng-model="event.name" placeholder="Required">
+  </div>
+  <div class="form-group">
+    <label for="txtDescription">Description</label>
+    <input type="text" id="txtDescription" class="form-control" ng-model="event.description">
+  </div>
+  <div style="min-height:290px;">
+    <div class="well well-sm" ng-model="event.date">
+      <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
+    </div>
+  </div>
+  <div class="jumbotron" style="margin:10px;">
+    <p>{{event.name}}</p>
+    <p>{{event.description}}</p>
+    <p>{{event.date}}</p>
+  </div>
+</form>

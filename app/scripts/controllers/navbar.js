@@ -10,10 +10,14 @@ angular.module('angularBootstrap2App')
       'link': '/About'
     },
     {'title': 'Form',
-      'link': '/Form'
+      'link': '/Forms/form'
     },
     {'title': 'File',
-      'link': '/File'
+      'link': '/Forms/File'
+    },
+    {
+      'title': 'Event',
+      'link': '/Forms/Event'
     }];
 
     $scope.isActive = function(route) {
