@@ -1,4 +1,4 @@
-<form>
+<form class="form" ng-controller="EventCtrl" ng-submit="submit(event)">
   <h4>Add Event</h4>
   <div class="form-group">
     <label for="txtName">Name</label>
@@ -8,14 +8,28 @@
     <label for="txtDescription">Description</label>
     <input type="text" id="txtDescription" class="form-control" ng-model="event.description">
   </div>
-  <div style="min-height:290px;">
+  <div>
     <div class="well well-sm" ng-model="event.date">
       <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
     </div>
   </div>
-  <div class="jumbotron" style="margin:10px;">
-    <p>{{event.name}}</p>
-    <p>{{event.description}}</p>
-    <p>{{event.date}}</p>
+  <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+  <div style="margin:10px;">
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="row in Events track by $index">
+          <td>{{row.name}}</td>
+          <td>{{row.description}}</td>
+          <td>{{row.date | date:"fullDate"}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </form>

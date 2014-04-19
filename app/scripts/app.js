@@ -25,7 +25,8 @@ angular.module('angularBootstrap2App', [
         templateUrl: 'partials/forms/file'
       })
       .when('/Forms/Event', {
-        templateUrl: 'partials/forms/event'
+        templateUrl: 'partials/forms/event',
+        controller: 'EventCtrl'
       })
       .otherwise({
         redirectTo: '/'
