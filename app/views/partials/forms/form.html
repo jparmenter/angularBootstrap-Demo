@@ -17,7 +17,20 @@
   </div>
   <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
 
-  <div class="jumbotron" style="margin:10px;">
-    <p>{{user.firstName}} {{user.lastName}}</p>
+  <div style="margin:10px;">
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="u in users track by $index">
+          <td>{{u.firstName}}</td>
+          <td>{{u.lastName}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </form>
