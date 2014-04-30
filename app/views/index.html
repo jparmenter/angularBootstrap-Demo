@@ -17,7 +17,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" >
     <!-- endbuild -->
   </head>
   <body ng-app="angularBootstrap2App">
@@ -26,7 +26,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-include="'partials/navbar'"></div>
+    <div  class="container" ng-include="'partials/navbar'"></div>
     <div class="container" ng-view=""></div>
     <div class="container" ng-include="'partials/footer'"></div>
 
@@ -61,6 +61,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/navbar.js"></script>
         <script src="scripts/controllers/footer.js"></script>

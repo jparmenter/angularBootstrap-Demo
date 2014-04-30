@@ -8,8 +8,10 @@ angular.module('angularBootstrap2App')
     },
     {'title': 'About',
       'link': '/About'
-    },
-    {'title': 'Form',
+    }];
+
+    $scope.forms = [{
+      'title': 'Form',
       'link': '/Forms/form'
     },
     {'title': 'File',
