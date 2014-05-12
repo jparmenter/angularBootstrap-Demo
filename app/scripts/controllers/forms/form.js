@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularBootstrap2App')
+angular.module('angularBootstrapApp')
   .controller('FormCtrl', function ($scope) {
     $scope.user = {firstName: '', lastName: '', acceptTerms: false};
     $scope.fail = false;

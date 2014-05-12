@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularBootstrap2App')
+angular.module('angularBootstrapApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',

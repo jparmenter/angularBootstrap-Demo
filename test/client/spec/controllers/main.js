@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angularBootstrap2App'));
+  beforeEach(module('angularBootstrapApp'));
 
   var MainCtrl,
     scope,

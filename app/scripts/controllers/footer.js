@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularBootstrap2App')
+angular.module('angularBootstrapApp')
   .controller('FooterCtrl', function ($scope) {
     var date = new Date();
     $scope.currentYear = date.getFullYear();

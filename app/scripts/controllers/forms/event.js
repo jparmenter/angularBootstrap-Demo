@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularBootstrap2App')
+angular.module('angularBootstrapApp')
   .controller('EventCtrl', function ($scope) {
     var _date = new Date();
     $scope.event = {name: '', description: '', date: _date};
