@@ -12,7 +12,7 @@ angular.module('angularBootstrapApp')
 
     $scope.forms = [{
       'title': 'Form',
-      'link': '/Forms/form'
+      'link': '/Forms/Form'
     },
     {'title': 'File',
       'link': '/Forms/File'
