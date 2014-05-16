@@ -5,12 +5,12 @@ Playing around with ui-angular's angular-bootstrap directives to mess around wit
 
 Build
 
-------------
+``````````````
 npm install
-------------
+``````````````
 
 Run
 
--------------
+``````````````
 grunt serve
--------------
+``````````````
