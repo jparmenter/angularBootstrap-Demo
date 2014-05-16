@@ -15,4 +15,28 @@ describe('Controller: FormCtrl', function () {
   it('should attach an initialized user', function () {
     expect(scope.user).not.toBe(null);
   });
+
+  it('should attach an user with a fristName property', function () {
+    expect(scope.user.firstName).toBe('');
+  });
+
+  it('should attach an user with a lastName property', function () {
+    expect(scope.user.lastName).toBe('');
+  });
+
+  it('should attach an user with a acceptTerms property', function () {
+    expect(scope.user.acceptTerms).toBe(false);
+  });
+
+  it('should attach fail flag as false', function () {
+    expect(scope.fail).toBe(false);
+  });
+
+  it('should attach a pass flag as false', function () {
+    expect(scope.fail).toBe(false);
+  });
+
+  it('should attach a isValidUser method that initiallly would return false', function () {
+    expect(scope.isValidUser()).toBe(false);
+  });
 });
