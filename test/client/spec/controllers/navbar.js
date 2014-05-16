@@ -81,15 +81,11 @@ describe('Controller: NavbarCtrl', function() {
     expect(scope.isActive('/')).toBe(true);
   });
 
-  // it('Home should not be our active location', inject(
-  //   function ($controller, $locationProvider) {
-  //     $locationProvider.path('/stuff');
-  //     NavbarCtrl = $controller('NavbarCtrl', {
-  //       $scope : scope,
-  //       $location
-  //     })
-  //   },
-  //   function() {
-  //     expect(scope.isActive('/')).toBe(false);
-  //   }));
+  it('Home should not be our active location', inject(
+    function ($location) {
+      $location.path('/stuff');
+    },
+    function() {
+      expect(scope.isActive('/')).toBe(false);
+    }));
 });

@@ -48,6 +48,10 @@ module.exports = function(config) {
     // - IE (only Windows)
     browsers: ['Chrome'],
 
+    // preprocessors: {
+    //   '**/app/scripts/**/*.js':'coverage'
+    // },
+    // reporters: ['coverage'],
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
