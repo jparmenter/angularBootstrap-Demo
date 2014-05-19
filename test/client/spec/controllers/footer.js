@@ -11,7 +11,13 @@ describe('Controller: FooterCtrl', function () {
     });
   }));
 
+
+  it('should attach a FooterCtrl', function() {
+    expect(FooterCtrl).toBeDefined();
+  });
+
   it('should attach a currentYear with 2014', function() {
-    expect(scope.currentYear).toBe(2014);
+    var date = new Date();
+    expect(scope.currentYear).toBe(date.getFullYear());
   });
 })

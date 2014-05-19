@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularBootstrapApp')
-  .controller('FormCtrl', function ($scope) {
+  .controller('FormCtrl', ['$scope', function ($scope) {
     $scope.user = {firstName: '', lastName: '', acceptTerms: false};
     $scope.fail = false;
     $scope.pass = false;
@@ -21,4 +21,4 @@ angular.module('angularBootstrapApp')
         $scope.fail = true;
       }
     };
-  });
+  }]);

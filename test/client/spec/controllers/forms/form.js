@@ -12,6 +12,10 @@ describe('Controller: FormCtrl', function () {
     });
   }));
 
+  it('should attach a FormCtrl', function() {
+    expect(FormCtrl).toBeDefined();
+  });
+
   it('should attach an initialized user', function () {
     expect(scope.user).not.toBe(null);
   });

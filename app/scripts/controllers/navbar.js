@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularBootstrapApp')
-  .controller('NavbarCtrl', function ($scope, $location) {
+  .controller('NavbarCtrl', ['$scope', '$location', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
@@ -25,4 +25,4 @@ angular.module('angularBootstrapApp')
     $scope.isActive = function(route) {
       return route === $location.path();
     };
-  });
+  }]);

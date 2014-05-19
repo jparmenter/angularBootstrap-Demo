@@ -11,6 +11,11 @@ describe('Controller: NavbarCtrl', function() {
     });
   }));
 
+
+  it('should attach a NavbarCtrl', function() {
+    expect(NavbarCtrl).toBeDefined();
+  });
+
   it('should attach an initialized menu', function () {
     expect(scope.menu).not.toBe(null);
   });
