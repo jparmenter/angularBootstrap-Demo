@@ -17,7 +17,7 @@ angular.module('angularBootstrapApp', [
         templateUrl: 'partials/about',
         controller: 'AboutCtrl'
       })
-      .when('/Forms/form', {
+      .when('/Forms/Form', {
         templateUrl: 'partials/forms/form',
         controller: 'FormCtrl'
       })
